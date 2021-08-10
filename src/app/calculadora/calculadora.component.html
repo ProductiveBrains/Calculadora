@@ -1,0 +1,15 @@
+<p style="text-align: center;">calculadora works!</p>
+
+<div class="container">
+
+    <div class="row">
+        <div class="col-6 bg-danger py-2" style="text-align: center;">
+            Numero1: <input type="number" [(ngModel)]="numero1" ><br><br>
+            Numero2: <input type="number" [(ngModel)]="numero2"><br><br>
+            <input type="submit" value="sumar" (click)="sumar()" class="btn btn-info">
+        </div>
+        <div class="col-6 bg-primary py-2" style="text-align: center;">
+            <h4 class="text-white" > Resultado : {{resultado}}</h4>            
+        </div>
+    </div>
+</div>

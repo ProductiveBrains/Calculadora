@@ -1,2 +1,9 @@
 <p>Aqui iria un empleado</p>
+<p>Nombre: {{nombre}}</p>
+
+<h5 >Apellido:  <span>{{apellido.value}}</span></h5>
+
+Ingrese Apellido :<input type="text" placeholder="Tipee su Apellido" #apellido (keyup)='0'>
+
+<h5 >msg:  <span>{{edad<18 ? "menor":"mayor"}}</span></h5>
 
