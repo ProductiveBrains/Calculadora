@@ -1,0 +1,10 @@
+.ancho {
+    width: 35px;
+    box-shadow: 1px 1px lightskyblue !important;
+}
+
+.ancho:hover {
+    color:white;
+    background-color: black;
+    box-shadow: 2px 2px white !important;
+}

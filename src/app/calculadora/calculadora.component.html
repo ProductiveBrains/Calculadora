@@ -1,15 +1,46 @@
-<p style="text-align: center;">calculadora works!</p>
+<h1 style="text-align: center;">calculadora Prototipo!</h1>
 
-<div class="container">
 
-    <div class="row">
-        <div class="col-6 bg-danger py-2" style="text-align: center;">
-            Numero1: <input type="number" [(ngModel)]="numero1" ><br><br>
-            Numero2: <input type="number" [(ngModel)]="numero2"><br><br>
-            <input type="submit" value="sumar" (click)="sumar()" class="btn btn-info">
+<div class="container ">
+    <div class="col-2">
+        <div class="pb-1 pt-3  bg-dark row ">
+            <div class="col-8 bg-warning">
+                <input type="text" [(ngModel)]="numero2">
+            </div>
+            <div class="col-2 bg-danger">
+                <button type="button" class="btn btn-secondary " (click)='sumar()'>C</button>
+            </div>
+            
         </div>
-        <div class="col-6 bg-primary py-2" style="text-align: center;">
-            <h4 class="text-white" > Resultado : {{resultado}}</h4>            
+
+        <div class="pb-1 pt-3  bg-dark row justify-content-between">
+            <div class="col-3 "><button type="button" class="btn btn-secondary ancho" (click)="operacion(7)">7</button></div>
+            <div class="col-3 "><button type="button" class="btn btn-secondary ancho" (click)="operacion(8)">8</button></div>
+            <div class="col-3 "><button type="button" class="btn btn-secondary ancho" (click)="operacion(9)">9</button></div>
+            <div class="col-3 "><button type="button" class="btn btn-secondary ancho" (click)="operando('/')">/</button></div>
+        </div>
+
+        <div class="py-1 bg-dark row justify-content-between">
+            <div class="col-3 "><button type="button" class="btn btn-secondary ancho shadow-sm "(click)="operacion(4)">4</button></div>
+            <div class="col-3 "><button type="button" class="btn btn-secondary ancho shadow-sm "(click)="operacion(5)">5</button></div>
+            <div class="col-3 "><button type="button" class="btn btn-secondary ancho shadow-sm "(click)="operacion(6)">6</button></div>
+            <div class="col-3 "><button type="button" class="btn btn-secondary ancho shadow-sm "(click)="operando('*')">*</button></div>
+
+        </div>
+
+        <div class="py-1  bg-dark row justify-content-between">
+            <div class="col-3 "><button type="button" class="btn btn-secondary ancho shadow-sm "(click)="operacion(1)">1</button></div>
+            <div class="col-3 "><button type="button" class="btn btn-secondary ancho shadow-sm "(click)="operacion(2)">2</button></div>
+            <div class="col-3 "><button type="button" class="btn btn-secondary ancho shadow-sm "(click)="operacion(3)">3</button></div>
+            <div class="col-3 "><button type="button" class="btn btn-secondary ancho shadow-sm "(click)="operando('-')">-</button></div>
+        </div>
+
+        <div class="pb-3 pt-1 bg-dark row justify-content-between">
+            <div class="col-3 "><button type="button" class="btn btn-secondary ancho shadow-sm "(click)="operacion(0)">0</button></div>
+            <div class="col-3 "><button type="button" class="btn btn-secondary ancho shadow-sm "(click)="operando('.')">.</button></div>
+            <div class="col-3 "><button type="button" class="btn btn-secondary ancho shadow-sm "(click)="operando('=')">=</button></div>
+            <div class="col-3 "><button type="button" class="btn btn-secondary ancho shadow-sm "(click)="operando('+')">+</button></div>
+
         </div>
     </div>
 </div>
